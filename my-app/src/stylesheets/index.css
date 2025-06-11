@@ -42,3 +42,30 @@ code {
 a.menuBarItems:link{
   text-decoration: none;
 }
+
+/* Home Page CSS */
+
+.home_page{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgb(208, 139, 208);
+}
+
+.home_page_details
+{
+
+  width: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(252, 251, 255);
+}
+
+.social_images{
+  max-width: 150px;
+  gap: 30px;
+  
+}
+
