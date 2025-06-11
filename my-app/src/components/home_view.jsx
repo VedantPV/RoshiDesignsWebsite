@@ -11,12 +11,10 @@ export default function HomePage()
                 <p>Here we sell quality and homemade garlands, baskets, and more!</p>
             
                 <br/>
-                <br/>
                 <p>Follow us on our social medias to learn about updates to our
                     store front and new product arrivals! 
                 </p>
                 <img src={InstagramLogo} style={{width: "140px"}}/>
-                <br/>
                 <br/>
                 <div className="home_page_tiktok_div">
                     
@@ -26,7 +24,6 @@ export default function HomePage()
                     <img src={TikTokLogo} style={{width: "100px"}}/>
                     
                 </div>
-                <br/>
                 <br/>
                 <h1>Scroll our gallery below!</h1>
                 <p>Insert Pictures here!!!!</p>

@@ -26,7 +26,7 @@ html{
 }
 
 .menuBarItems{
-  background-color: rgb(103, 6, 173);
+  background-color: rgb(169, 78, 234);
   color: black;
   border-top: 10px;
   width: 100%;
@@ -50,7 +50,8 @@ a.menuBarItems:link{
 
 /* Home Page CSS */
 
-.home_page{
+.home_page,
+.custom_purchases_page{
   display: inline-block;
   width: 100%;
   max-height: 90%;
@@ -61,7 +62,8 @@ a.menuBarItems:link{
 
 }
 
-.home_page_details
+.home_page_details,
+.custom_purchases_details
 {
   margin: auto;
   padding: 0;
