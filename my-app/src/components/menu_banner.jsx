@@ -6,10 +6,10 @@ export default function MenuBar(
     return(
        <div>
         <div className="menuBar">
-            <a className="menuBarItems" href="home_view.jsx"><span>Home</span></a>
-            <a className="menuBarItems" href="store_view.jsx"><span>StoreFront</span></a>
-            <a className="menuBarItems" href="custom_purchases_view.jsx"><span>Custom Purchases</span></a>
-            <a className="menuBarItems" href="rentals.jsx"><span>Rentals</span></a>
+            <a className="menuBarItems" href={`/${home_view}`}><span>Home</span></a>
+            <a className="menuBarItems" href={`/${storefront_view}`}><span>StoreFront</span></a>
+            <a className="menuBarItems" href={`/${custom_purchase_view}`}><span>Custom Purchases</span></a>
+            <a className="menuBarItems" href={`/${rental_view}`}><span>Rentals</span></a>
         </div>
            
        </div>
