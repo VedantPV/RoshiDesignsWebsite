@@ -8,20 +8,33 @@ export default function HomePage()
             <div className="home_page_details">
                 <h1>Welcome to Roshi Designs</h1>
                 <br/>
-                <br/>
                 <p>Here we sell quality and homemade garlands, baskets, and more!</p>
+            
                 <br/>
                 <br/>
                 <p>Follow us on our social medias to learn about updates to our
-                    store front and new product arrivals! Also click the TikTok link to join our livestreams 
-                    and watch how we create our products by hand!
+                    store front and new product arrivals! 
                 </p>
-                
-            </div>
-            <div className="social_media_logos">
-                    <img src={InstagramLogo} style={{width: "140px"}}/>
+                <img src={InstagramLogo} style={{width: "140px"}}/>
+                <br/>
+                <br/>
+                <div className="home_page_tiktok_div">
+                    
+                    <p>Follow our TikTok page to watch how we create our wonderful products! 
+                        Join our TikTok livestreams too to ask us questions and more!
+                    </p>
                     <img src={TikTokLogo} style={{width: "100px"}}/>
+                    
+                </div>
+                <br/>
+                <br/>
+                <h1>Scroll our gallery below!</h1>
+                <p>Insert Pictures here!!!!</p>
+                <br/>
+            
             </div>
+            
+            
         </div>
     );
 }

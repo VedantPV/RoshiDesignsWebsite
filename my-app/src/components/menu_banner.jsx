@@ -4,7 +4,6 @@ export default function MenuBar(
 )
 {
     return(
-       <div>
         <div className="menuBar">
             <a className="menuBarItems" href={`/${home_view}`}><span>Home</span></a>
             <a className="menuBarItems" href={`/${storefront_view}`}><span>StoreFront</span></a>
@@ -12,6 +11,5 @@ export default function MenuBar(
             <a className="menuBarItems" href={`/${rental_view}`}><span>Rentals</span></a>
         </div>
            
-       </div>
     )
 }

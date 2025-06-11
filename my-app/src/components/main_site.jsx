@@ -5,6 +5,7 @@ import HomePage from "./home_view";
 import RentalPage from "./rentals";
 import StoreFront from "./store_view";
 import CustomPurchasePage from "./custom_purchases_view";
+import Footer from "./footer";
 
 export default function RoshiDesignsSite()
 {
@@ -24,6 +25,8 @@ export default function RoshiDesignsSite()
                     <Route path="/rentals" element={<RentalPage/>}/>
                     
                 </Routes>
+                
+                <Footer/>
             </BrowserRouter>
 
                 
