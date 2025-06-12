@@ -78,6 +78,23 @@ a.menuBarItems:link{
   
 }
 
+.loading_bar{
+  background-color: red;
+  width: 0px;
+  height: 10px;
+  animation-name: loading_bar_animation;
+  animation-duration: 5s;
+  animation-direction: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loading_bar_animation {
+  0% {background-color: red; width: 0px;}
+  90% {background-color: red; width: 100%;}
+  100% {background-color: red; width: 0px;}
+}
+
+
 .footer{
   position: fixed;
   bottom: 0;

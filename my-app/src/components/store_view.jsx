@@ -26,6 +26,7 @@ export default function StoreFront()
     setTimeout(() =>
     {
         document.getElementById("review1").style.display = "none";
+
         document.getElementById("review2").style.display = "block";
         document.getElementById("review3").style.display = "none";
         transition_two();
@@ -60,9 +61,15 @@ export default function StoreFront()
     transition_one();
     return (
         <div>
-            <span id="review1">Storefront Page</span>
-            <span id="review2">Review 2</span>
-            <span id="review3">Review 3</span>
+            <div>
+                <span id="review1">Storefront Page</span>
+                <span id="review2">Review 2</span>
+                <span id="review3">Review 3</span>
+            </div>
+            
+            <div className="loading_bar">
+            
+            </div>
         </div>
     )
 }
