@@ -9,7 +9,9 @@ export default function HomePage()
         var reviews = ["'Very nice clip-in rose...great packaging...looking forward to wearing it!' - stgeorges",
             "'envelopes are good i am happy' - Manisha",
             "'Beautiful garland, fast postal, thank you' - Gary",
-            "'This flower is gorgeous! I removed the comb and added a pin back. The quality is excellent. It arrived quickly and was packed well. Great seller!' - Patrice"
+            "'This flower is gorgeous! I removed the comb and added a pin back. The quality is excellent. It arrived quickly and was packed well. Great seller!' - Patrice",
+            "'I love it! I haven't put it up yet bc I need to buy a frame but it looks so pretty and I can't wait for it to work its magic💚' - Kingguela",
+            "'This is beautiful 🤩 I am so impressed'"
         ]
 
         var [review_static, set_review_static] = useState(false);
@@ -64,13 +66,17 @@ export default function HomePage()
         const manualNextReview = () =>
         {
             console.log("Manually moving to next review")
+            console.log("review index: ", review_index);
+            console.log("Next review: ", reviews[review_index]);
             if(review_index >= reviews.length)
             {
             review_index = 0;
             }
-            console.log(document.getElementById("review_manual"));
+
+            console.log("review index: ", review_index);
             if(document.getElementById("review_manual"))
             {
+                console.log("Next review: ", reviews[review_index]);
                 document.getElementById("review_manual").textContent = reviews[review_index];
                 review_index++;
             }
