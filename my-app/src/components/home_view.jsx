@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import InstagramLogo from "../images/instagram-logo-instagram-icon-transparent-free-png.webp"
 import TikTokLogo from "../images/tiktoklogo.png"
 
@@ -6,56 +6,76 @@ export default function HomePage()
 {
         var interval_time = 6000;
 
-        useEffect(() => {
-            var review_1 = document.getElementById("review_1");
-            var review_2 = document.getElementById("review_2");
-            var review_3 = document.getElementById("review_3");
+        var reviews = ["'Very nice clip-in rose...great packaging...looking forward to wearing it!' - stgeorges",
+            "'envelopes are good i am happy' - Manisha",
+            "'Beautiful garland, fast postal, thank you' - Gary",
+            "'This flower is gorgeous! I removed the comb and added a pin back. The quality is excellent. It arrived quickly and was packed well. Great seller!' - Patrice"
+        ]
 
-            review_1.style.display = "block"; 
-            review_2.style.display = "none";
-            review_3.style.display = "none";
+        var [review_static, set_review_static] = useState(false);
+
+        useEffect(() => {
+            var review_auto = document.getElementById("review_auto");
+            console.log(review_auto);
+            if(review_auto)
+            {
+                review_auto.textContent = reviews[0];
+            }
+            
+            var review_manual = document.getElementById("review_manual");
+            console.log(review_manual);
+            if(review_manual)
+            {
+                review_manual.textContent = reviews[0];
+            }
+            
+            
         })
     
-    
-    
+        var review_index = 1;
+        console.log(review_index);
         function transition_one()
         {
-        
-        setTimeout(() =>
+        if(review_static)
         {
-            document.getElementById("review_1").style.display = "none";
-    
-            document.getElementById("review_2").style.display = "block";
-            document.getElementById("review_3").style.display = "none";
-            transition_two();
-    
-        }, interval_time);
-        } 
-    
-        function transition_two()
-        {
-            setTimeout(() => {
-    
-            document.getElementById("review_1").style.display = "none";
-            document.getElementById("review_2").style.display = "none";
-            document.getElementById("review_3").style.display = "block";
-            transition_three();
-        },
-        interval_time);
-        } 
-    
-        function transition_three()
-        {
-            setTimeout(() => {
-    
-            document.getElementById("review_1").style.display = "block";
-            document.getElementById("review_2").style.display = "none";
-            document.getElementById("review_3").style.display = "none";
-            transition_one();
-        },
-        interval_time);
+            return;
         }
+        if(review_index >= reviews.length)
+        {
+            review_index = 0;
+        }
+        const timer = setTimeout(() =>
+        {
+            document.getElementById("review_auto").textContent = reviews[review_index];
+            review_index++;
+            transition_one();
+
+        }, interval_time);
+        }     
+
+        const setReviewsToStatic = () => {
+            set_review_static(true);
+        }
+
+        const manualNextReview = () =>
+        {
+            console.log("Manually moving to next review")
+            if(review_index >= reviews.length)
+            {
+            review_index = 0;
+            }
+            console.log(document.getElementById("review_manual"));
+            if(document.getElementById("review_manual"))
+            {
+                document.getElementById("review_manual").textContent = reviews[review_index];
+                review_index++;
+            }
+            
+        }
+
         transition_one();
+
+
 
     return(
         <div className="home_page">
@@ -65,13 +85,26 @@ export default function HomePage()
                 <p>Here we sell quality and homemade garlands, baskets, and more!</p>
                 <p>Our Wonderful Reviews:</p>
                 <div className="reviews_section">
-                    <span className="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span> 
-                    <span id="review_1">"Very nice clip-in rose...great packaging...looking forward to wearing it!" - stgeorges</span>
-                    <span id="review_2">"envelopes are good i am happy" - Manisha</span>
-                    <span id="review_3">"Beautiful garland, fast postal, thank you" - Gary</span>
+                    {!review_static && 
+                    <div>
+                        <span className="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                        <br/> 
+                        <span id="review_auto"></span>
                     
-                    <br/>
-                    <div className="loading_bar"/>
+                         <br/>
+                        <div className="loading_bar"/>
+                        <button onClick={() => {setReviewsToStatic(); manualNextReview();}}>Next</button>
+                    </div>}
+                    {review_static && 
+                    <div>
+                        <span className="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                        <br/> 
+                        <span id="review_manual"></span>
+                    
+                         <br/>
+                        <button onClick={() => {manualNextReview();}}>Next</button>
+                    </div>}
+                    
                 </div>
             
                 <br/>
