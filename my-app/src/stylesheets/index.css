@@ -73,9 +73,15 @@ a.menuBarItems:link{
   font-weight: bold;
   overflow: auto;
   color: rgb(252, 251, 255);
-  
-  
-  
+  animation-name: home_page_details_animation;
+  animation-duration: 1.5s;
+
+
+}
+
+@keyframes home_page_details_animation {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .stars{
@@ -97,7 +103,7 @@ a.menuBarItems:link{
   width: 0px;
   height: 5px;
   animation-name: loading_bar_animation;
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-direction: linear;
   animation-iteration-count: infinite;
 }

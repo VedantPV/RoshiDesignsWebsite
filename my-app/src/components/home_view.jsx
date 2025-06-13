@@ -4,7 +4,7 @@ import TikTokLogo from "../images/tiktoklogo.png"
 
 export default function HomePage()
 {
-        var interval_time = 5000;
+        var interval_time = 6000;
 
         useEffect(() => {
             var review_1 = document.getElementById("review_1");
