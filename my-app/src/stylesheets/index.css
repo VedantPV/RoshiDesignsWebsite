@@ -78,10 +78,24 @@ a.menuBarItems:link{
   
 }
 
+.stars{
+  color: yellow;
+}
+
+.reviews_section{
+  border: 2px solid blanchedalmond;
+  background-color: black;
+  width: 90%;
+  height: auto;
+  text-align: center;
+  margin: auto;
+
+}
+
 .loading_bar{
   background-color: red;
   width: 0px;
-  height: 10px;
+  height: 5px;
   animation-name: loading_bar_animation;
   animation-duration: 5s;
   animation-direction: linear;
