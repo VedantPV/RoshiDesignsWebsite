@@ -46,9 +46,13 @@ export default function HomePage()
         }
         const timer = setTimeout(() =>
         {
-            document.getElementById("review_auto").textContent = reviews[review_index];
-            review_index++;
-            transition_one();
+            if(document.getElementById("review_auto"))
+            {
+                document.getElementById("review_auto").textContent = reviews[review_index];
+                review_index++;
+                transition_one();
+            }
+            
 
         }, interval_time);
         }     
@@ -92,8 +96,11 @@ export default function HomePage()
                         <span id="review_auto"></span>
                     
                          <br/>
+                         <br/>
+                         <br/>
                         <div className="loading_bar"/>
-                        <button onClick={() => {setReviewsToStatic(); manualNextReview();}}>Next</button>
+                        {/* <button onClick={() => {setReviewsToStatic(); manualNextReview();}}>Next</button> */}
+                        <div className="next_button" onClick={() => {setReviewsToStatic(); manualNextReview();}}>Click for next review</div>
                     </div>}
                     {review_static && 
                     <div>
@@ -102,7 +109,8 @@ export default function HomePage()
                         <span id="review_manual"></span>
                     
                          <br/>
-                        <button onClick={() => {manualNextReview();}}>Next</button>
+                         <br/>
+                        <div className="next_button" onClick={() => {manualNextReview();}}>Click for next review</div>
                     </div>}
                     
                 </div>
