@@ -63,23 +63,27 @@ export default function HomePage()
             set_review_static(true);
         }
 
-        const manualNextReview = () =>
+        const manualNextReview = (forward_next) =>
         {
             console.log("Manually moving to next review")
             console.log("review index: ", review_index);
             console.log("Next review: ", reviews[review_index]);
-            if(review_index >= reviews.length)
+            if(forward_next)
             {
-            review_index = 0;
-            }
+                if(review_index >= reviews.length)
+                {
+                    review_index = 0;
+                }
 
-            console.log("review index: ", review_index);
-            if(document.getElementById("review_manual"))
-            {
-                console.log("Next review: ", reviews[review_index]);
-                document.getElementById("review_manual").textContent = reviews[review_index];
-                review_index++;
+                console.log("review index: ", review_index);
+                if(document.getElementById("review_manual"))
+                {
+                    console.log("Next review: ", reviews[review_index]);
+                    document.getElementById("review_manual").textContent = reviews[review_index];
+                    review_index++;
+                }
             }
+            
             
         }
 
@@ -106,7 +110,7 @@ export default function HomePage()
                          <br/>
                         <div className="loading_bar"/>
                         {/* <button onClick={() => {setReviewsToStatic(); manualNextReview();}}>Next</button> */}
-                        <div className="next_button" onClick={() => {setReviewsToStatic(); manualNextReview();}}>Click for next review</div>
+                        <div className="next_button" onClick={() => {setReviewsToStatic(); manualNextReview(true);}}>Click to switch to manual scrolling</div>
                     </div>}
                     {review_static && 
                     <div>
@@ -116,7 +120,7 @@ export default function HomePage()
                     
                          <br/>
                          <br/>
-                        <div className="next_button" onClick={() => {manualNextReview();}}>Click for next review</div>
+                        <div className="next_button" onClick={() => {manualNextReview(true);}}>Click for next review</div>
                     </div>}
                     
                 </div>
