@@ -94,7 +94,7 @@ export default function HomePage()
     return(
         <div className="home_page">
             <div className="home_page_details">
-                <h1>Welcome to Roshi Designs</h1>
+                <h1>Welcome to RoshiDesigns99</h1>
                 <br/>
                 <p>Here we sell quality and homemade garlands, baskets, and more!</p>
                 <p>Our Wonderful Reviews:</p>

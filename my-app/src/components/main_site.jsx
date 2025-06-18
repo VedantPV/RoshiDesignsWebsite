@@ -20,7 +20,6 @@ export default function RoshiDesignsSite()
                 />
                 <Routes>
                     <Route path="/" element={<HomePage/>}/>
-                    <Route path="/storefront" element={<StoreFront/>}/>
                     <Route path="/custompurchases" element={<CustomPurchasePage/>}/>
                     <Route path="/rentals" element={<RentalPage/>}/>
                     
