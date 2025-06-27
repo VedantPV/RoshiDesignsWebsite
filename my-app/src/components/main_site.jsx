@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-rou
 import MenuBar from "./menu_banner";
 import HomePage from "./home_view";
 import RentalPage from "./rentals";
-import StoreFront from "./store_view";
+
 import CustomPurchasePage from "./custom_purchases_view";
 import Footer from "./footer";
 

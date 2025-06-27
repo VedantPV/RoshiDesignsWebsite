@@ -51,28 +51,35 @@ a.menuBarItems:link{
 /* Home Page CSS */
 
 .home_page,
-.custom_purchases_page{
+.custom_purchases_page,
+.rentals_page{
   display: inline-block;
   width: 100%;
   max-height: 90%;
   text-align: center;
-  background-color: rgb(208, 139, 208);
+  background-image: url("../images/lotus_flower.jpg");
+  background-size: 10%;
+  background-repeat: repeat;
   overflow: auto;
   position: absolute;
 
 }
 
 .home_page_details,
-.custom_purchases_details
+.custom_purchases_details,
+.rentals_details
 {
   margin: auto;
   padding: 0;
-  width: 50%;
+  width: 63%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: larger;
   font-weight: bold;
   overflow: auto;
-  color: rgb(252, 251, 255);
+  color: darkorchid;
+  background-color: lightpink;
+  border: 1px solid black;
+
   animation-name: home_page_details_animation;
   animation-duration: 1.5s;
 
