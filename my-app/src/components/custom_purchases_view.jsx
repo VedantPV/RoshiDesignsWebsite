@@ -50,10 +50,14 @@ export default function CustomPurchasePage()
                 <p>We do custom products and designs alongside our current inventory!</p>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Baskets</h2>
                 
-                <img src={customBaskets[customBasketsIndex].photoSource} className="custom_purchases_images"></img>
-                <p>{customBaskets[customBasketsIndex].caption}</p>
-                <button className="next_button" onClick={() => {nextBasketImage();}}>Next Basket</button>
-                <h6>{customBasketsIndex+1} Of {customBaskets.length}</h6>
+                
+                <div>
+                    <img src={customBaskets[customBasketsIndex].photoSource} className="custom_purchases_images"></img>
+                    <p>{customBaskets[customBasketsIndex].caption}</p>
+                    <p>{customBasketsIndex+1} Of {customBaskets.length}</p>
+                    <button className="next_button" onClick={() => {nextBasketImage();}}>Next Basket</button>
+                </div>
+                
                 
             </div>          
         </div>

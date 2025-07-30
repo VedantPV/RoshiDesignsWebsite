@@ -130,6 +130,7 @@ a.menuBarItems:link{
   background-color: black;
   text-align: center;
   cursor: pointer;
+  font-size: larger;
 }
 
 .next_button:hover{
@@ -149,9 +150,14 @@ a.menuBarItems:link{
 /*Custom Purchases CSS*/
 
 .custom_purchases_images{
-  width: 350px;
-  height: 300px;
+  width: 400px;
+  height: 350px;
   border: 3px solid black;
+}
+
+.custom_purchases_caption{
+  color: white;
+  background-color: black;
 }
 
 /*Footer and Miscellaneous CSS*/
