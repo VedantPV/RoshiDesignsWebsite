@@ -58,6 +58,7 @@ a.menuBarItems:link{
   max-height: 90%;
   text-align: center;
   background-image: url("../images/lotus_flower.jpg");
+  /*Apply to flower background only :opacity: 0.2;*/
   background-size: 10%;
   background-repeat: repeat;
   overflow: auto;
@@ -145,6 +146,14 @@ a.menuBarItems:link{
   height: 250px;
 }
 
+/*Custom Purchases CSS*/
+
+.custom_purchases_images{
+  width: 350px;
+  height: 300px;
+  border: 3px solid black;
+}
+
 /*Footer and Miscellaneous CSS*/
 .footer{
   position: fixed;
@@ -157,8 +166,4 @@ a.menuBarItems:link{
   text-align: center;
   padding: 7px;
   
-}
-
-.bigger_br{
-  height: 20px;
 }
