@@ -3,7 +3,7 @@ export default function Footer()
 {
     return (
         <div className="footer">
-            <span>Vedant Vyas prod.</span>
+            <span>Reserved for RoshiDesigns99</span>
         </div>
     )
 }

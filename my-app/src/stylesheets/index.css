@@ -57,7 +57,7 @@ a.menuBarItems:link{
   width: 100%;
   max-height: 90%;
   text-align: center;
-  background-image: url("../images/lotus_flower.jpg");
+  background-image: url("../images/white_lotus_flower.jpg");
   /*Apply to flower background only :opacity: 0.2;*/
   background-size: 10%;
   background-repeat: repeat;
@@ -78,7 +78,7 @@ a.menuBarItems:link{
   font-weight: bold;
   overflow: auto;
   color: darkorchid;
-  background-color: lightpink;
+  background-color: white;
   border: 1px solid black;
 
   animation-name: home_page_details_animation;
@@ -122,7 +122,8 @@ a.menuBarItems:link{
   100% {background-color: rgb(159, 24, 200); width: 0px;}
 }
 
-.next_button{
+.next_button,
+.rental_next_button{
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
@@ -133,7 +134,12 @@ a.menuBarItems:link{
   font-size: larger;
 }
 
-.next_button:hover{
+.rental_next_button{
+  width: 50%;
+}
+
+.next_button:hover,
+.rental_next_button:hover{
   background-color: rgb(159, 24, 200);
   transition-duration: 0.3s;
 }
