@@ -10,6 +10,12 @@ import FruitBasket3 from "../images/customBaskets/FruitBasket3.jpg"
 import NutsBasket from "../images/customBaskets/NutsBasket.jpg"
 import RedBasket from "../images/customBaskets/RedBasket.jpg"
 
+import FlowerMat1 from "../images/rentalPictures/flowerMats/DSC_5619.jpg";
+import FlowerMat2 from "../images/rentalPictures/flowerMats/DSC_5623.jpg";
+import FlowerMat3 from "../images/rentalPictures/flowerMats/DSC_5624.jpg";
+import FlowerMat4 from "../images/rentalPictures/flowerMats/DSC_5630.jpg";
+import FlowerMat5 from "../images/rentalPictures/flowerMats/DSC_5633.jpg";
+
 import { useEffect, useState } from "react";
 
 export default function CustomPurchasePage()
@@ -37,10 +43,22 @@ export default function CustomPurchasePage()
         }
         else
         {
-            let index = customBasketsIndex;
             set_basket_index(customBasketsIndex+1);
         }
     }
+    var flowerMats = [{img: FlowerMat1, caption: "Circular Multi-Colored Mat (Angle 1)"}, 
+            {img: FlowerMat2, caption: "Circular Multi-Colored Mat (Angle 2)"},
+            {img: FlowerMat3, caption: "Red Lotus Flower Mat"},
+            {img: FlowerMat4, caption: "Orange and Red Flower Mat"},
+            {img: FlowerMat5, caption: "Leafy Semi-Circle Flower Mat"}
+        ];
+    
+        const [currentMatIndex, set_mat_index] = useState(0);
+    
+        function nextMatImage()
+        {
+            currentMatIndex >= flowerMats.length - 1 ? set_mat_index(0) : set_mat_index(currentMatIndex+1);
+        }
 
     return(
         <div className="custom_purchases_page">
@@ -57,7 +75,14 @@ export default function CustomPurchasePage()
                     <p>{customBasketsIndex+1} Of {customBaskets.length}</p>
                     <button className="next_button" onClick={() => {nextBasketImage();}}>Next Basket</button>
                 </div>
-                
+                <br/>
+                <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Rangoli Mats</h2>
+                <div>
+                    <img src={flowerMats[currentMatIndex].img} className="custom_purchases_images"></img>
+                    <p>{flowerMats[currentMatIndex].caption}</p>
+                    <p>{currentMatIndex+1} Of {flowerMats.length}</p>
+                    <button className="next_button" onClick={() => {nextMatImage();}}>Next Rangoli Mat</button>
+                </div>
                 
             </div>          
         </div>
