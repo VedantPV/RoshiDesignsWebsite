@@ -79,7 +79,7 @@ a.menuBarItems:link{
   overflow: auto;
   color: darkorchid;
   background-color: white;
-  border: 1px solid black;
+  border: 2px solid black;
 
   animation-name: home_page_details_animation;
   animation-duration: 1.5s;

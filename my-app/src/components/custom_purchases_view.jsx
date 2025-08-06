@@ -16,6 +16,13 @@ import FlowerMat3 from "../images/rentalPictures/flowerMats/DSC_5624.jpg";
 import FlowerMat4 from "../images/rentalPictures/flowerMats/DSC_5630.jpg";
 import FlowerMat5 from "../images/rentalPictures/flowerMats/DSC_5633.jpg";
 
+import BookStand from "../images/otherCustomProducts/bookstand.jpg";
+import GiftPackage1 from "../images/otherCustomProducts/giftpackaging1.jpg";
+import GiftPackage2 from "../images/otherCustomProducts/giftpackaging2.jpg";
+import GoldNutContainer from "../images/otherCustomProducts/GoldNutContainer.jpg";
+import PoojaStand1 from "../images/otherCustomProducts/poojastand1.jpg";
+import PoojaStand2 from "../images/otherCustomProducts/poojastand2.jpg";
+
 import { useEffect, useState } from "react";
 
 export default function CustomPurchasePage()
@@ -66,9 +73,8 @@ export default function CustomPurchasePage()
                 <h1>Custom Purchase Page</h1>
                 <br/>
                 <p>We do custom products and designs alongside our current inventory!</p>
+                <p>Call us to learn more and order custom products: _______</p>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Baskets</h2>
-                
-                
                 <div>
                     <img src={customBaskets[customBasketsIndex].photoSource} className="custom_purchases_images"></img>
                     <p>{customBaskets[customBasketsIndex].caption}</p>
@@ -83,6 +89,23 @@ export default function CustomPurchasePage()
                     <p>{currentMatIndex+1} Of {flowerMats.length}</p>
                     <button className="next_button" onClick={() => {nextMatImage();}}>Next Rangoli Mat</button>
                 </div>
+                <br/>
+                <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Custom Gift Packaging</h2>
+                <img src={GiftPackage1} className="custom_purchases_images"/>
+                <p></p>
+                <img src={GiftPackage2} className="custom_purchases_images"/>
+                <p></p>
+                <br/>
+                <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Nut Trays and Displays</h2>
+                <img src={GoldNutContainer} className="custom_purchases_images"/>
+                <br/>
+                <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Puja Stands for Ceremonies</h2>
+                <img src={PoojaStand1} className="custom_purchases_images"/>
+                <p></p>
+                <img src={PoojaStand2} className="custom_purchases_images"/>
+                <p></p>
+                <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Miscellaneous</h2>
+                <img src={BookStand} className="custom_purchases_images"/>
                 
             </div>          
         </div>
