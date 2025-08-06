@@ -13,6 +13,15 @@ import Hats from "../images/rentalPictures/miscellaneous/DSC_5561.jpg";
 import MoneyBox from "../images/rentalPictures/miscellaneous/DSC_5572.jpg";
 import MiniDrums from "../images/rentalPictures/miscellaneous/DSC_5615.jpg";
 
+import GarlandPillars from "../images/rentalPictures/displayPieces/DSC_5546.jpg";
+import BouquetPillars from "../images/rentalPictures/displayPieces/DSC_5549.jpg";
+import Candle from "../images/rentalPictures/displayPieces/DSC_5557.jpg";
+import HangingDecor from "../images/rentalPictures/displayPieces/DSC_5576.jpg";
+import BangleCeremonyDecor from "../images/rentalPictures/displayPieces/DSC_5583.jpg";
+import FlowerBangleArch from "../images/rentalPictures/displayPieces/DSC_5595.jpg";
+import FlowerRing from "../images/rentalPictures/displayPieces/DSC_5607.jpg";
+import GanpatiSign from "../images/rentalPictures/displayPieces/DSC_5617.jpg";
+
 import { captureOwnerStack, useEffect, useState } from "react";
 
 
@@ -62,6 +71,23 @@ export default function RentalPage()
         miscDecorIndex >= miscDecor.length - 1 ? set_misc_index(0) : set_misc_index(miscDecorIndex+1);
     }
 
+    var displayPieces = [{img: GarlandPillars, caption: "Comes in 3 sizes!"},
+        {img: BouquetPillars, caption: "Comes in 3 sizes as well!"},
+        {img: Candle, caption: "Big Lamp with Candle inside!"},
+        {img: HangingDecor, caption: "White Flowery Decor that can be hung anywhere!"},
+        {img: BangleCeremonyDecor, caption: "Bangle Cermemony Decor"},
+        {img: FlowerBangleArch, caption: "Nice display piece for bangles, sweets, and more!"},
+        {img: FlowerRing, caption: "Flower Ring Decor"},
+        {img: GanpatiSign, caption: "Ganapati Sign that can be placed on any wall!"}
+    ];
+
+    var [displayPieceIndex, set_DP_index] = useState(0);
+
+    function nextDisplayPieceImage()
+    {
+        displayPieceIndex >= displayPieces.length - 1 ? set_DP_index(0) : set_DP_index(displayPieceIndex+1);
+    }
+
     return (
         <div className="rentals_page">
             <div className="rentals_details">
@@ -100,6 +126,15 @@ export default function RentalPage()
                     <p>{miscDecorIndex+1} of {miscDecor.length}</p>
                     <button className="rental_next_button" onClick={() => {nextMiscImage();}}>Next Decor Piece</button>
                 </div>
+                <br/>
+                <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Display Pieces</h2>
+                <div>
+                    <img src={displayPieces[displayPieceIndex].img} className="rental_images"/>
+                    <p>{displayPieces[displayPieceIndex].caption}</p>
+                    <p>{displayPieceIndex+1} of {displayPieces.length}</p>
+                    <button className="rental_next_button" onClick={() => {nextDisplayPieceImage();}}>Next Display Piece</button>
+                </div>
+                <br/>
             </div>
         </div>
     );
