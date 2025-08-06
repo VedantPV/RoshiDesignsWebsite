@@ -22,7 +22,7 @@ import FlowerBangleArch from "../images/rentalPictures/displayPieces/DSC_5595.jp
 import FlowerRing from "../images/rentalPictures/displayPieces/DSC_5607.jpg";
 import GanpatiSign from "../images/rentalPictures/displayPieces/DSC_5617.jpg";
 
-import { captureOwnerStack, useEffect, useState } from "react";
+import { useState } from "react";
 
 
 export default function RentalPage()
@@ -96,7 +96,9 @@ export default function RentalPage()
                 <p>Rent some of our finest decorations and statues for your special celebrations!</p>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>&#9880; Flower Walls &#9880;</h2>
                 <div>
-                    <img src={flowerWalls[customFlowerIndex].img} className="rental_images"></img>
+                    <a target="blank" href={flowerWalls[customFlowerIndex].img}>
+                        <img src={flowerWalls[customFlowerIndex].img} alt="Couldn't Load" className="rental_images"></img>
+                    </a>
                     <p>{flowerWalls[customFlowerIndex].caption}</p>
                     <p>{customFlowerIndex+1} of {flowerWalls.length}</p>
                     <button className="rental_next_button" onClick={() => {nextFlowerWallImage();}}>Next Flower Wall</button>
@@ -105,7 +107,9 @@ export default function RentalPage()
                 <br/>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Posters</h2>
                 <div>
-                    <img src={posters[posterIndex].img} className="rental_images"/>
+                    <a target="blank" href={posters[posterIndex].img}>
+                        <img src={posters[posterIndex].img} alt="Couldn't Load" className="rental_images"/>
+                    </a>
                     <p>{posters[posterIndex].caption}</p>
                     <p>{posterIndex+1} of {posters.length}</p>
                     <button className="rental_next_button" onClick={() => {nextPosterImage();}}>Next Poster</button>
@@ -113,7 +117,9 @@ export default function RentalPage()
                 <br/>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Statues</h2>
                 <div>
-                    <img src={statues[statueIndex].img} className="rental_images"/>
+                    <a target="blank" href={statues[statueIndex].img}>
+                        <img src={statues[statueIndex].img} alt="Couldn't Load" className="rental_images"/>
+                    </a>
                     <p>{statues[statueIndex].caption}</p>
                     <p>{statueIndex+1} of {statues.length}</p>
                     <button className="rental_next_button" onClick={() => {nextStatueImage();}}>Next Statue</button>
@@ -121,7 +127,9 @@ export default function RentalPage()
                 <br/>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Decor and More</h2>
                 <div>
-                    <img src={miscDecor[miscDecorIndex].img} className="rental_images"/>
+                    <a target="blank" href={miscDecor[miscDecorIndex].img}>
+                        <img src={miscDecor[miscDecorIndex].img} alt="Couldn't Load" className="rental_images"/>
+                    </a>
                     <p>{miscDecor[miscDecorIndex].caption}</p>
                     <p>{miscDecorIndex+1} of {miscDecor.length}</p>
                     <button className="rental_next_button" onClick={() => {nextMiscImage();}}>Next Decor Piece</button>
@@ -129,7 +137,9 @@ export default function RentalPage()
                 <br/>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Display Pieces</h2>
                 <div>
-                    <img src={displayPieces[displayPieceIndex].img} className="rental_images"/>
+                    <a target="blank" href={displayPieces[displayPieceIndex].img}>
+                        <img src={displayPieces[displayPieceIndex].img} alt="Couldn't Load" className="rental_images"/>
+                        </a>
                     <p>{displayPieces[displayPieceIndex].caption}</p>
                     <p>{displayPieceIndex+1} of {displayPieces.length}</p>
                     <button className="rental_next_button" onClick={() => {nextDisplayPieceImage();}}>Next Display Piece</button>

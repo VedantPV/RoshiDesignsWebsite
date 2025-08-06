@@ -23,7 +23,7 @@ import GoldNutContainer from "../images/otherCustomProducts/GoldNutContainer.jpg
 import PoojaStand1 from "../images/otherCustomProducts/poojastand1.jpg";
 import PoojaStand2 from "../images/otherCustomProducts/poojastand2.jpg";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function CustomPurchasePage()
 {
@@ -74,9 +74,12 @@ export default function CustomPurchasePage()
                 <br/>
                 <p>We do custom products and designs alongside our current inventory!</p>
                 <p>Call us to learn more and order custom products: _______</p>
+                <p>Scroll Through Our Gallery and Click on the Image for a Enlarged View</p>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Baskets</h2>
                 <div>
-                    <img src={customBaskets[customBasketsIndex].photoSource} className="custom_purchases_images"></img>
+                    <a target="blank" href={customBaskets[customBasketsIndex].photoSource}>
+                        <img src={customBaskets[customBasketsIndex].photoSource} alt="Couldn't Load" className="custom_purchases_images"></img>
+                    </a>
                     <p>{customBaskets[customBasketsIndex].caption}</p>
                     <p>{customBasketsIndex+1} Of {customBaskets.length}</p>
                     <button className="next_button" onClick={() => {nextBasketImage();}}>Next Basket</button>
@@ -84,28 +87,37 @@ export default function CustomPurchasePage()
                 <br/>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Rangoli Mats</h2>
                 <div>
-                    <img src={flowerMats[currentMatIndex].img} className="custom_purchases_images"></img>
+                    <a target="blank" href={flowerMats[currentMatIndex].img}>
+                        <img src={flowerMats[currentMatIndex].img} alt="Couldn't Load" className="custom_purchases_images"></img>
+                        </a>
                     <p>{flowerMats[currentMatIndex].caption}</p>
                     <p>{currentMatIndex+1} Of {flowerMats.length}</p>
                     <button className="next_button" onClick={() => {nextMatImage();}}>Next Rangoli Mat</button>
                 </div>
                 <br/>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Custom Gift Packaging</h2>
-                <img src={GiftPackage1} className="custom_purchases_images"/>
+                <a target="blank" href={GiftPackage1}><img src={GiftPackage1} alt="Couldn't Load" className="custom_purchases_images"/>
+                </a>
                 <p></p>
-                <img src={GiftPackage2} className="custom_purchases_images"/>
+                <a target="blank" href={GiftPackage2}>
+                    <img src={GiftPackage2} alt="Couldn't Load" className="custom_purchases_images"/>
+                </a>
                 <p></p>
                 <br/>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Nut Trays and Displays</h2>
-                <img src={GoldNutContainer} className="custom_purchases_images"/>
+                <a target="blank" href={GoldNutContainer}><img src={GoldNutContainer} alt="Couldn't Load" className="custom_purchases_images"/>
+                </a>
                 <br/>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Puja Stands for Ceremonies</h2>
-                <img src={PoojaStand1} className="custom_purchases_images"/>
+                <a target="blank" href={PoojaStand1}>
+                    <img src={PoojaStand1} alt="Couldn't Load" className="custom_purchases_images"/></a>
                 <p></p>
-                <img src={PoojaStand2} className="custom_purchases_images"/>
+                <a target="blank" href={PoojaStand2}><img src={PoojaStand2} alt="Couldn't Load" className="custom_purchases_images"/>
+                </a>
                 <p></p>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Miscellaneous</h2>
-                <img src={BookStand} className="custom_purchases_images"/>
+                <a target="blank" href={BookStand}><img src={BookStand} alt="Couldn't Load" className="custom_purchases_images"
+                /></a>
                 
             </div>          
         </div>
