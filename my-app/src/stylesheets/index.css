@@ -56,13 +56,13 @@ a.menuBarItems:link{
 .rentals_page{
   display: inline-block;
   width: 100%;
-  max-height: 90%;
+  height: 100%;
   text-align: center;
   background-image: url("../images/white_lotus_flower.jpg");
   /*Apply to flower background only :opacity: 0.2;*/
   background-size: 10%;
   background-repeat: repeat;
-  overflow: auto;
+  overflow: none;
   position: absolute;
 
 }
@@ -73,15 +73,15 @@ a.menuBarItems:link{
 {
   margin: auto;
   padding: 0;
-  width: 63%;
-  height: 100%;
+  width: 80%;
+  height: 94%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: larger;
   font-weight: bold;
   overflow: auto;
   color: darkorchid;
   background-color: white;
-  border: 2px solid black;
+  border: 3px solid black;
 
   animation-name: home_page_details_animation;
   animation-duration: 1.5s;
@@ -148,6 +148,7 @@ a.menuBarItems:link{
   background-color: black;
   border: 1px solid black;
   color: white;
+  cursor: pointer;
 
 }
 

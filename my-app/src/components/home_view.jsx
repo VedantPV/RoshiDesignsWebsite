@@ -99,10 +99,17 @@ export default function HomePage()
                 <p>Here we sell quality and homemade garlands, baskets, and more!</p>
                 <br/>
                 <p>
-                    Follow our socials below to be kept updated with new products and designs! 
-                    Contact me with any custom order requests! 
+                    About Me:
                 </p>
-                <a href="https://linktr.ee/roshidesigns99" target="blank"><span className="linktree_b">Click here to view my socials</span></a>
+                <h4>
+                    Welcome to RoshiDesigns99!
+I’m Roshi, the heart and hands behind every creation you see here. I specialize in bringing your celebrations to life with custom orders and stunning displays for weddings, bridal showers, baby showers, birthdays, Indian weddings, and festivals.
+
+From elegant gift baskets to eye-catching backdrops, Ganesh statue rentals, and decorative stands, every piece is crafted with care to make your event unforgettable.
+
+Join me live on TikTok daily to see what I’m working on in real time, and follow my social media for the latest updates, behind-the-scenes moments, and new product releases.
+                </h4>
+                <a href="https://linktr.ee/roshidesigns99" target="blank"><button className="linktree_button">Click here to view my socials</button></a>
                 <br/>
                 <br/>
                 <br/>

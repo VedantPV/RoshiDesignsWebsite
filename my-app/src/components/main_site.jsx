@@ -25,7 +25,7 @@ export default function RoshiDesignsSite()
                     
                 </Routes>
                 
-                <Footer/>
+                {/* <Footer/> */}
             </BrowserRouter>
 
                 
