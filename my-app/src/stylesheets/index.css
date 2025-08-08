@@ -49,6 +49,7 @@ a.menuBarItems:link{
 }
 
 /* Home Page CSS */
+/*Eliminate any whitespace left below the linktree*/
 
 .home_page,
 .custom_purchases_page,
@@ -73,6 +74,7 @@ a.menuBarItems:link{
   margin: auto;
   padding: 0;
   width: 63%;
+  height: 100%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: larger;
   font-weight: bold;
@@ -141,6 +143,19 @@ a.menuBarItems:link{
   transition-duration: 0.3s;
 }
 
+.linktree_button{
+  padding: 10px 50px;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+
+}
+
+.linktree_button:hover{
+  color: black;
+  background-color: aliceblue;
+  transition-duration: 0.2s;
+}
 /* Custom Purchases CSS */
 
 

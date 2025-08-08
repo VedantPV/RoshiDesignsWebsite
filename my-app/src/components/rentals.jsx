@@ -28,7 +28,7 @@ import { useState } from "react";
 export default function RentalPage()
 {
     var flowerWalls = [{img: FlowerWall1, caption: "White Flower Wall"},
-        {img: FlowerWall2, caption: "Multi-Colored Wall with Flower Design"}
+        {img: FlowerWall2, caption: "Multi-Colored Wall with Lotus Flower Design"}
     ];
     var [customFlowerIndex, set_flower_index] = useState(0);
 
@@ -47,8 +47,8 @@ export default function RentalPage()
         posterIndex >= posters.length - 1 ? set_poster_index(0) : set_poster_index(posterIndex+1);
     }
 
-    var statues = [{img: ElephantStatue, caption: "Gold Elephant Statue"},
-        {img: GanpatiStatue, caption: "Gold Ganpati Statue"}
+    var statues = [{img: ElephantStatue, caption: "Elephant Statue"},
+        {img: GanpatiStatue, caption: "Ganpati Statue"}
     ];
 
     var [statueIndex, set_statue_index] = useState(0);
@@ -58,9 +58,9 @@ export default function RentalPage()
         statueIndex >= statues.length - 1 ? set_statue_index(0) : set_statue_index(statueIndex+1);
     }
 
-    var miscDecor = [{img: DecorPiece, caption: "Tiered Decoration Piece"},
-        {img: Hats, caption: "Colored Hats for festivities"},
-        {img: MoneyBox, caption: "Money Box"},
+    var miscDecor = [{img: DecorPiece, caption: "Jagoo/Jago"},
+        {img: Hats, caption: "Rental Pagdi"},
+        {img: MoneyBox, caption: "Money Holder"},
         {img: MiniDrums, caption: "Mini Dhols (drums)"}
     ];
 
@@ -71,14 +71,14 @@ export default function RentalPage()
         miscDecorIndex >= miscDecor.length - 1 ? set_misc_index(0) : set_misc_index(miscDecorIndex+1);
     }
 
-    var displayPieces = [{img: GarlandPillars, caption: "Comes in 3 sizes!"},
-        {img: BouquetPillars, caption: "Comes in 3 sizes as well!"},
-        {img: Candle, caption: "Big Lamp with Candle inside!"},
-        {img: HangingDecor, caption: "White Flowery Decor that can be hung anywhere!"},
+    var displayPieces = [{img: GarlandPillars, caption: "Stage Decoration, Comes in 3 sizes!"},
+        {img: BouquetPillars, caption: "Stage Decoration (Bouquet), Comes in 3 sizes as well!"},
+        {img: Candle, caption: "Big Lamp with Candle inside"},
+        {img: HangingDecor, caption: "Mogra Flower Hangings"},
         {img: BangleCeremonyDecor, caption: "Bangle Cermemony Decor"},
-        {img: FlowerBangleArch, caption: "Nice display piece for bangles, sweets, and more!"},
-        {img: FlowerRing, caption: "Flower Ring Decor"},
-        {img: GanpatiSign, caption: "Ganapati Sign that can be placed on any wall!"}
+        {img: FlowerBangleArch, caption: "Mehndi Platter"},
+        {img: FlowerRing, caption: "Engagment Platter"},
+        {img: GanpatiSign, caption: "Ganapati Sign"}
     ];
 
     var [displayPieceIndex, set_DP_index] = useState(0);
@@ -94,6 +94,7 @@ export default function RentalPage()
                 <h1 style={{textDecoration: "underline"}}>Only For Current Residents in New York</h1>
                 <h1>Call our number to learn more: _______</h1>
                 <p>Rent some of our finest decorations and statues for your special celebrations!</p>
+                <p>Scroll Through Our Gallery and Click on the Image for a Enlarged View</p>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>&#9880; Flower Walls &#9880;</h2>
                 <div>
                     <a target="blank" href={flowerWalls[customFlowerIndex].img}>
@@ -135,7 +136,7 @@ export default function RentalPage()
                     <button className="rental_next_button" onClick={() => {nextMiscImage();}}>Next Decor Piece</button>
                 </div>
                 <br/>
-                <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Display Pieces</h2>
+                <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Stage Decorations</h2>
                 <div>
                     <a target="blank" href={displayPieces[displayPieceIndex].img}>
                         <img src={displayPieces[displayPieceIndex].img} alt="Couldn't Load" className="rental_images"/>

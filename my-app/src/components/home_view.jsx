@@ -97,48 +97,12 @@ export default function HomePage()
                 <h1>Welcome to RoshiDesigns99</h1>
                 <br/>
                 <p>Here we sell quality and homemade garlands, baskets, and more!</p>
-                {/* <p>Our Wonderful Reviews:</p>
-                <div className="reviews_section">
-                    {!review_static && 
-                    <div>
-                        <span className="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
-                        <br/> 
-                        <span id="review_auto"></span>
-                    
-                         <br/>
-                         <br/>
-                         <br/>
-                        <div className="loading_bar"/>
-                        
-                        <div className="next_button" onClick={() => {setReviewsToStatic(); manualNextReview(true);}}>Click to switch to manual scrolling</div>
-                    </div>}
-                    {review_static && 
-                    <div>
-                        <span className="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
-                        <br/> 
-                        <span id="review_manual"></span>
-                    
-                         <br/>
-                         <br/>
-                        <div className="next_button" onClick={() => {manualNextReview(true);}}>Click for next review</div>
-                    </div>}
-                    
-                </div>
-             */}
                 <br/>
-                <p>Follow us on our social medias to learn about updates to our
-                    store front and new product arrivals! 
+                <p>
+                    Follow our socials below to be kept updated with new products and designs! 
+                    Contact me with any custom order requests! 
                 </p>
-                <img src={InstagramLogo} style={{width: "140px"}}/>
-                <br/>
-                <div className="home_page_tiktok_div">
-                    
-                    <p>Follow our TikTok page to watch how we create our wonderful products! 
-                        Join our TikTok livestreams too to ask us questions and more!
-                    </p>
-                    <img src={TikTokLogo} style={{width: "100px"}}/>
-                    
-                </div>
+                <a href="https://linktr.ee/roshidesigns99" target="blank"><span className="linktree_b">Click here to view my socials</span></a>
                 <br/>
                 <br/>
                 <br/>

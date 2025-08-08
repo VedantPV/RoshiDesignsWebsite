@@ -28,16 +28,16 @@ import { useState } from "react";
 export default function CustomPurchasePage()
 {
     var customBaskets = [{caption: "Perfect for Baby Showers", photoSource: BabyBlueBasket},
-        {caption: "Basket With Sweets next to it", photoSource: BasketWithSweets},
-        {caption: "Blue Basket", photoSource: BlueBasket},
-        {caption: "Beautiful Custom Bridal Baskets", photoSource: BridalBasket},
-        {caption: "Custom Candy Basket", photoSource: CandyBasket},
-        {caption: "Basket with Craisins and other assortments", photoSource: CraisinsBasket},
+        {caption: "Snack Basket and Sweet Platter", photoSource: BasketWithSweets},
+        {caption: "Birthday Basket", photoSource: BlueBasket},
+        {caption: "Bridal Lengha Basket", photoSource: BridalBasket},
+        {caption: "Chocolate Boqquet", photoSource: CandyBasket},
+        {caption: "Snacks Basket 2", photoSource: CraisinsBasket},
         {caption: "Fruit Baskets", photoSource: FruitBasket1},
         {caption: "Fruit Baskets", photoSource: FruitBasket2},
         {caption: "Fruit Baskets", photoSource: FruitBasket3},
-        {caption: "Nut Assortment Basket", photoSource: NutsBasket},
-        {caption: "Red Basket", photoSource: RedBasket}
+        {caption: "Dry Fruit Basket", photoSource: NutsBasket},
+        {caption: "Dry Fruit Basket", photoSource: RedBasket}
     ];
 
     var [customBasketsIndex, set_basket_index] = useState(0);
@@ -98,11 +98,11 @@ export default function CustomPurchasePage()
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Custom Gift Packaging</h2>
                 <a target="blank" href={GiftPackage1}><img src={GiftPackage1} alt="Couldn't Load" className="custom_purchases_images"/>
                 </a>
-                <p></p>
+                <p>Custom Gift Wrapping</p>
                 <a target="blank" href={GiftPackage2}>
                     <img src={GiftPackage2} alt="Couldn't Load" className="custom_purchases_images"/>
                 </a>
-                <p></p>
+                <p>Bridal Gift Basket in Custom Wrapping</p>
                 <br/>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Nut Trays and Displays</h2>
                 <a target="blank" href={GoldNutContainer}><img src={GoldNutContainer} alt="Couldn't Load" className="custom_purchases_images"/>
@@ -111,13 +111,14 @@ export default function CustomPurchasePage()
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Puja Stands for Ceremonies</h2>
                 <a target="blank" href={PoojaStand1}>
                     <img src={PoojaStand1} alt="Couldn't Load" className="custom_purchases_images"/></a>
-                <p></p>
-                <a target="blank" href={PoojaStand2}><img src={PoojaStand2} alt="Couldn't Load" className="custom_purchases_images"/>
-                </a>
-                <p></p>
+                <p>Puja Stand</p>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Miscellaneous</h2>
                 <a target="blank" href={BookStand}><img src={BookStand} alt="Couldn't Load" className="custom_purchases_images"
                 /></a>
+                <p>Sahe Chithi/Wedding Card Display</p>
+                <a target="blank" href={PoojaStand2}><img src={PoojaStand2} alt="Couldn't Load" className="custom_purchases_images"/>
+                </a>
+                <p>Sahe Chithi/Wedding Card Display</p>
                 
             </div>          
         </div>
