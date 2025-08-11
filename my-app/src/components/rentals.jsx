@@ -93,8 +93,8 @@ export default function RentalPage()
             <div className="rentals_details">
                 <h1 style={{textDecoration: "underline"}}>Only For Current Residents in New York</h1>
                 <h1>Call our number to learn more: _______</h1>
-                <p>Rent some of our finest decorations and statues for your special celebrations!</p>
-                <p>Scroll Through Our Gallery and Click on the Image for a Enlarged View</p>
+                <h2>Rent some of our finest decorations and statues for your special celebrations!</h2>
+                <h2>Scroll Through Our Gallery and Click on the Image for a Enlarged View</h2>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>&#9880; Flower Walls &#9880;</h2>
                 <div>
                     <a target="blank" href={flowerWalls[customFlowerIndex].img}>
