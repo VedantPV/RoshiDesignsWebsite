@@ -96,19 +96,16 @@ export default function HomePage()
             <div className="home_page_details">
                 <h1>Welcome to RoshiDesigns99</h1>
                 <br/>
-                <p>Here we sell quality and homemade garlands, baskets, and more!</p>
-                <br/>
-                <p>
+                <h1>
                     About Me:
-                </p>
-                <h4>
-                    Welcome to RoshiDesigns99!
-I’m Roshi, the heart and hands behind every creation you see here. I specialize in bringing your celebrations to life with custom orders and stunning displays for weddings, bridal showers, baby showers, birthdays, Indian weddings, and festivals.
-
-From elegant gift baskets to eye-catching backdrops, Ganesh statue rentals, and decorative stands, every piece is crafted with care to make your event unforgettable.
-
-Join me live on TikTok daily to see what I’m working on in real time, and follow my social media for the latest updates, behind-the-scenes moments, and new product releases.
-                </h4>
+                </h1>
+                <div className="about_me_container">
+                    <h3>Welcome to RoshiDesigns99!</h3>
+                    <h3>I’m Roshi, the heart and hands behind every creation you see here. I specialize in bringing your celebrations to life with custom orders and stunning displays for weddings, bridal showers, baby showers, birthdays, Indian weddings, and festivals.</h3>
+                    <h3>From elegant gift baskets to eye-catching backdrops, Ganesh statue rentals, and decorative stands, every piece is crafted with care to make your event unforgettable.</h3>
+                    <h3>Join me live on TikTok daily to see what I’m working on in real time, and follow my social media for the latest updates, behind-the-scenes moments, and new product releases.</h3>
+                </div>
+                
                 <a href="https://linktr.ee/roshidesigns99" target="blank"><button className="linktree_button">Click here to view my socials</button></a>
                 <br/>
                 <br/>
