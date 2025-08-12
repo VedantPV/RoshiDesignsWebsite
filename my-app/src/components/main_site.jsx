@@ -14,13 +14,13 @@ export default function RoshiDesignsSite()
             <BrowserRouter>
                 <MenuBar
                 home_view=""
-                custom_purchase_view="custompurchases"
+                custom_purchase_view="customproducts"
                 rental_view="rentals"
                 storefront_view="storefront"
                 />
                 <Routes>
                     <Route path="/" element={<HomePage/>}/>
-                    <Route path="/custompurchases" element={<CustomPurchasePage/>}/>
+                    <Route path="/customproducts" element={<CustomPurchasePage/>}/>
                     <Route path="/rentals" element={<RentalPage/>}/>
                     
                 </Routes>

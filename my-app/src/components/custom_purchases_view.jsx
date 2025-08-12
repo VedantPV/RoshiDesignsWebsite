@@ -70,11 +70,13 @@ export default function CustomPurchasePage()
     return(
         <div className="custom_purchases_page">
             <div className="custom_purchases_details">
-                <h1>Custom Purchase Page</h1>
+                <h1>Customized Products</h1>
                 <br/>
                 <h2>We do custom products and designs alongside our current inventory!</h2>
                 <h2>Call us to learn more and order custom products: _______</h2>
-                <h2>Scroll Through Our Gallery and Click on the Image for a Enlarged View</h2>
+                <h2>Scroll Through Our Past Custom Products Gallery</h2>
+                <h2>Click on any image for an enlarged view</h2>
+                <br/>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Baskets</h2>
                 <div>
                     <a target="blank" href={customBaskets[customBasketsIndex].photoSource}>

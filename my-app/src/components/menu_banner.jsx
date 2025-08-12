@@ -6,7 +6,7 @@ export default function MenuBar(
     return(
         <div className="menuBar">
             <a className="menuBarItems" href={`/${home_view}`}><span>Home</span></a>
-            <a className="menuBarItems" href={`/${custom_purchase_view}`}><span>Custom Purchases</span></a>
+            <a className="menuBarItems" href={`/${custom_purchase_view}`}><span>Custom Products</span></a>
             <a className="menuBarItems" href={`/${rental_view}`}><span>Rentals</span></a>
         </div>
            
