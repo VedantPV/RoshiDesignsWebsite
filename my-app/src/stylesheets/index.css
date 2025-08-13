@@ -37,7 +37,7 @@ html{
   cursor: pointer;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
-  border: 1px solid black;
+  border: 2px solid black;
 
 }
 
@@ -85,14 +85,15 @@ a.menuBarItems:link{
   margin: auto;
   padding: 0;
   width: 80%;
-  height: 94%;
+  height: 91%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: larger;
   font-weight: bold;
   overflow: auto;
   color: darkorchid;
   background-color: white;
-  border: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
 
   animation-name: home_page_details_animation;
   animation-duration: 1.5s;

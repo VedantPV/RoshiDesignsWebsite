@@ -18,10 +18,6 @@ export default function HomePage()
                 </div>
                 
                 <a href="https://linktr.ee/roshidesigns99" target="blank"><button className="linktree_button">Click here to view my socials</button></a>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
             
             </div>
             
