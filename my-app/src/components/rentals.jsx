@@ -22,6 +22,7 @@ import FlowerBangleArch from "../images/rentalPictures/displayPieces/DSC_5595.jp
 import FlowerRing from "../images/rentalPictures/displayPieces/DSC_5607.jpg";
 import GanpatiSign from "../images/rentalPictures/displayPieces/DSC_5617.jpg";
 
+
 import { useState } from "react";
 
 
@@ -90,6 +91,7 @@ export default function RentalPage()
 
     return (
         <div className="rentals_page">
+            <title>Rental Products</title>
             <div className="rentals_details">
                 <h1 style={{textDecoration: "underline"}}>Only For Current Residents in New York</h1>
                 <h1>Call our number to learn more: _______</h1>

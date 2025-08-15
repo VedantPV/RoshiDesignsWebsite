@@ -1,11 +1,14 @@
+import RoshiDesignsLogo from "../images/logos/RoshiDesigns99FullLogo.jpg";
 
 export default function HomePage()
 {
 
     return(
         <div className="home_page">
+            <title>Home Page</title>
             <div className="home_page_details">
                 <h1>Welcome to RoshiDesigns99</h1>
+                <img src={RoshiDesignsLogo} className="custom_purchases_images"/>
                 <br/>
                 <h1>
                     About Me:

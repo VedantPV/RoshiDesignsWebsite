@@ -184,6 +184,8 @@ a.menuBarItems:link{
   width: 400px;
   height: 350px;
   border: 3px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .custom_purchases_caption{
