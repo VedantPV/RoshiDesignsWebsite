@@ -96,7 +96,7 @@ export default function CustomPurchasePage()
             <div className="custom_purchases_details">
                 <h1>Customized Products</h1>
                 <br/>
-                <h2>We do custom products and designs alongside our current inventory!</h2>
+                <h2>We do custom products and designs alongside our current inventory!!!</h2>
                 <h2>Call us to learn more and order custom products: +1 516-724-5920</h2>
                 <h2>Scroll Through Our Past Custom Products Gallery</h2>
                 <h2>Click on any image for an enlarged view</h2>

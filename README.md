@@ -1,4 +1,4 @@
-# Current Hours Worked on this Site: 13.5 Hours
+# Current Hours Worked on this Site: 14 Hours
 
 * 1 hour of research
 * 5 hours on website structuring and routing
@@ -9,4 +9,4 @@
 * Adjust where enlarge vie text is visible.
 * Ask Roshi Auntie and Soham for tweaks and whatnot before adding finishing touches and deploying. 
 
-* 13.5 * 25 = 325 
+* 14 * 25 = 325 
