@@ -98,10 +98,10 @@ export default function CustomPurchasePage()
                 <br/>
                 <h2>We do custom products and designs alongside our current inventory</h2>
                 <a href="https://linktr.ee/roshidesigns99" target="blank"><button className="linktree_button">
-                    For new custom products and images, click here to view them on my social medias</button></a>
+                    For the latest custom products and images, click/tap here to view them on my social medias</button></a>
                 <h2>Call us to learn more and order custom products: +1 516-724-5920</h2>
                 <h2>Scroll Through Our Past Custom Products Gallery</h2>
-                <h2>Click on any image for an enlarged view (enlarging recommended for mobile users)</h2>
+                <h2>Click/tap on any image for an enlarged view (recommended for mobile users)</h2>
 
                 <br/>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>Baskets</h2>

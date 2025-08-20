@@ -21,7 +21,7 @@ export default function HomePage()
                 </div>
                 
                 <a href="https://linktr.ee/roshidesigns99" target="blank"><button className="linktree_button">
-                    For new custom products and images, click here to view them on my social medias</button></a>
+                    For the latest custom products and images, click/tap here to view them on my social medias</button></a>
             
             </div>
             

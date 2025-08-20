@@ -97,8 +97,8 @@ export default function RentalPage()
                 <h1>Call our number to learn more: +1 516-724-5920</h1>
                 <h2>Rent some of our finest decorations and statues for your special celebrations!</h2>
                 <a href="https://linktr.ee/roshidesigns99" target="blank"><button className="linktree_button">
-                    For new rental products and images, click here to view them on my social medias</button></a>
-                <h2>Scroll Through Our Gallery and Click on the Image for a Enlarged View (enlarging recommended for mobile users)</h2>
+                    For the latest rental products and images, click/tap here to view them on my social medias</button></a>
+                <h2>Scroll Through Our Gallery and click/tap on the Image for a Enlarged View (recommended for mobile users)</h2>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>&#9880; Flower Walls &#9880;</h2>
                 <div>
                     <a target="blank" href={flowerWalls[customFlowerIndex].img}>
