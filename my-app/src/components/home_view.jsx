@@ -20,7 +20,8 @@ export default function HomePage()
                     <h3>Join me live on TikTok daily to see what I’m working on in real time, and follow my social media for the latest updates, behind-the-scenes moments, and new product releases.</h3>
                 </div>
                 
-                <a href="https://linktr.ee/roshidesigns99" target="blank"><button className="linktree_button">Click here to view my socials</button></a>
+                <a href="https://linktr.ee/roshidesigns99" target="blank"><button className="linktree_button">
+                    For new custom products and images, click here to view them on my social medias</button></a>
             
             </div>
             

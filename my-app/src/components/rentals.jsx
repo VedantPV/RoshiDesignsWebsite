@@ -93,10 +93,12 @@ export default function RentalPage()
         <div className="rentals_page">
             <title>Rental Products</title>
             <div className="rentals_details">
-                <h1 style={{textDecoration: "underline"}}>Only For Current Residents in New York</h1>
-                <h1>Call our number to learn more: _______</h1>
+                <h1 style={{textDecoration: "underline"}}>Only For Current Residents in New York!</h1>
+                <h1>Call our number to learn more: +1 516-724-5920</h1>
                 <h2>Rent some of our finest decorations and statues for your special celebrations!</h2>
-                <h2>Scroll Through Our Gallery and Click on the Image for a Enlarged View</h2>
+                <a href="https://linktr.ee/roshidesigns99" target="blank"><button className="linktree_button">
+                    For new rental products and images, click here to view them on my social medias</button></a>
+                <h2>Scroll Through Our Gallery and Click on the Image for a Enlarged View (enlarging recommended for mobile users)</h2>
                 <h2 style={{textDecoration: "underline", fontStyle: "italic"}}>&#9880; Flower Walls &#9880;</h2>
                 <div>
                     <a target="blank" href={flowerWalls[customFlowerIndex].img}>
